@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Daniel Ribeiro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" width="100" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#midias">Mídias Digitais</a></li>
+            <li id="botao"><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="esquerda ini">
+            <h2 id="destaque">Daniel Ribeiro</h2>
+            <h3>Web Designer</h3>
+            <h3>Desenvolvedor Front-End</h3>
+        </div>
+        <div class="direita">
+            <img class="capa" src="img/logo.png" width="600">
+
+        </div>
+    </main>
+
+    <!-- ------------------------------------------ -->
+
+    <section id="sobre">
+        <div class="esquerda">
+            <img class="dan" src="img/daniel.jpg" width="400" style="border-radius: 360px;">
+
+        </div>
+        <div class="direita">
+            <h3 id="destaque">Um pouco sobre mim</h3>
+
+            <P> Sou Web Designer e Desenvolvedor Front-End apaixonado por tecnologia e inovação. Com um histórico na
+                criação de experiências
+                digitais, tenho um portfólio diversificado que inclui projetos de sites e materiais para mídias
+                digitais.
+                <br><br>
+                Sou um profissional criativo e inovador, sempre buscando novas tecnologias e tendências para
+                oferecer as
+                melhores soluções.
+
+            </P>
+
+        </div>
+
+    </section>
+
+    <!--  -->
+
+
+    <section class="topico">
+        <h3 id="destaque"> Minhas Habilidades</h3>
+    </section>
+
+    <section class="projetos1" id="habilidades">
+        <div class="linha1">
+            <div class="card2">
+                <img src="img/icone/html.png" alt="Projeto 1">
+            </div>
+            <div class="card2">
+                <img src="img/icone/css.png" alt="Projeto 2">
+            </div>
+            <div class="card2">
+                <img src="img/icone/js.png" alt="Projeto 3">
+            </div>
+            <div class="card2">
+                <img src="img/icone/php.png" alt="Projeto 4">
+            </div>
+            <div class="card2">
+                <img src="img/icone/bt.png" alt="Projeto 5">
+            </div>
+        </div>
+
+        <div class="linha1">
+            <div class="card2">
+                <img src="img/icone/wp.png" alt="Projeto 6">
+            </div>
+            <div class="card2">
+                <img src="img/icone/wix.png" alt="Projeto 7">
+            </div>
+            <div class="card2">
+                <img src="img/icone/git.png" alt="Projeto 8">
+            </div>
+            <div class="card2">
+                <img src="img/icone/msql.png" alt="Projeto 9">
+            </div>
+            <div class="card2">
+                <img src="img/icone/ps.png" alt="Projeto 10">
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- ------------------------------------------ -->
+    <section class="topico" id="projetos">
+        <h3 id="destaque"> Meus Projetos Web</h3>
+    </section>
+
+    <section class="projetos">
+        <div class="linha">
+            <div class="card" onclick="openModal('img/projetos/1.3.png')">
+                <img src="img/projetos/1.3.png" alt="Projeto 1">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/1.1.png')">
+                <img src="img/projetos/1.1.png" alt="Projeto 2">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/1.png')">
+                <img src="img/projetos/1.png" alt="Projeto 3">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/3.png')">
+                <img src="img/projetos/3.png" alt="Projeto 4">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="card" onclick="openModal('img/projetos/4.jpg')">
+                <img src="img/projetos/4.jpg" alt="Projeto 5">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/5.png')">
+                <img src="img/projetos/5.png" alt="Projeto 6">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/7.png')">
+                <img src="img/projetos/7.png" alt="Projeto 7">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/10.png')">
+                <img src="img/projetos/10.png" alt="Projeto 8">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="card" onclick="openModal('img/projetos/11.png')">
+                <img src="img/projetos/11.png" alt="Projeto 9">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/12.png')">
+                <img src="img/projetos/12.png" alt="Projeto 10">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/8.png')">
+                <img src="img/projetos/8.png" alt="Projeto 11">
+            </div>
+            <div class="card" onclick="openModal('img/projetos/9.png')">
+                <img src="img/projetos/9.png" alt="Projeto 12">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal" onclick="closeModal()">
+        <img id="modalImage" src="" alt="Ampliação da Imagem">
+    </div>
+
+    <!-- --------------------------------------- -->
+    <section class="topico">
+        <h3 id="destaque">Aplicações Web</h3>
+    </section>
+
+    <section>
+        <div class="esquerda" style="justify-content: center; align-items: center; display: grid;">
+            <!-- <img src="img/logo.png" width="600"> -->
+            <div>
+                <img class="aut" src="img/aplicacao/1.png" width="550">
+
+            </div>
+            <div>
+                <img class="aut" src="img/aplicacao/2.jpg" width="550">
+            </div>
+
+
+        </div>
+        <div class="direita">
+            <h3 id="destaque">Automação</h3>
+            <p><strong>Assinatura de E-mail</strong></p>
+
+            <P>
+                Este é um projeto em PHP, HTML, CSS e JavaScript para facilitar a geração de assinaturas de e-mail. A
+                aplicação permite que os usuários personalizem suas assinaturas correspondente para em e-mail.
+                <BR></BR>
+                Funcionalidades:
+                <br>
+                Personalização de informações, como nome, cargo, número de telefone, e-mail, escritório e estado.
+                Pré-visualização em tempo real da assinatura gerada.
+
+
+            </P>
+
+        </div>
+
+    </section>
+
+
+    <!--  -->
+
+    <section class="ajus">
+
+        <div class="direita">
+            <h3 id="destaque">Calculadora de Economia</h3>
+            <p><strong>Descontos mensais e anual</strong></p>
+
+            <P>
+                A calculadora de desconto na conta de energia é uma
+                ferramenta eficiente e intuitiva projetada para ajudar os usuários a calcular o
+                valor do desconto mensal e anual em suas contas de energia elétrica. <br> <br>Desenvolvida com HTML, CSS
+                E JavaScript com foco na simplicidade e usabilidade, a calculadora visa proporcionar uma maneira fácil
+                de estimar economias significativas em termos de custos de energia.
+
+
+            </P>
+
+        </div>
+        <div class="esquerda" style="justify-content: center; align-items: center; display: grid;">
+            <!-- <img src="img/logo.png" width="600"> -->
+            <div>
+                <img class="epop" src="img/aplicacao/3.png" width="550">
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- --------------------------------------- -->
+
+    <section class="topico" id="midias">
+        <h3 class="mid" id="destaque">Confira alguns materiais de Mídias Digitais</h3>
+    </section>
+
+    <section class="projetos">
+        <div class="linha">
+            <div class="card" onclick="openModal('img/midias/1.png')">
+                <img src="img/midias/1.png" alt="Projeto 1">
+            </div>
+            <div class="card" onclick="openModal('img/midias/4.jpg')">
+                <img src="img/midias/4.jpg" alt="Projeto 2">
+            </div>
+            <div class="card" onclick="openModal('img/midias/5.jpg')">
+                <img src="img/midias/5.jpg" alt="Projeto 3">
+            </div>
+            <div class="card" onclick="openModal('img/midias/2.png')">
+                <img src="img/midias/2.png" alt="Projeto 4">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="card" onclick="openModal('img/midias/6.jpg')">
+                <img src="img/midias/6.jpg" alt="Projeto 5">
+            </div>
+            <div class="card" onclick="openModal('img/midias/11.jpg')">
+                <img src="img/midias/11.jpg" alt="Projeto 6">
+            </div>
+            <div class="card" onclick="openModal('img/midias/8.jpg')">
+                <img src="img/midias/8.jpg" alt="Projeto 7">
+            </div>
+            <div class="card" onclick="openModal('img/midias/10.jpg')">
+                <img src="img/midias/10.jpg" alt="Projeto 8">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="final">
+        <h3 id="destaque">Saiba Mais</h3><br>
+
+
+    </section>
+    <section class="final">
+        <p>Você pode ver esses e muito mais projetos através das redes abaixo</p>
+
+    </section>
+    <section class="final">
+        <ul style="text-align: center; align-items: center; justify-content: center;">  <li id="botao" style="text-align: center; background-color: var(--cor-principal); padding: 20px;"><a href="https://wa.me/+5562981513406">Fale Comigo
+            Agora</a></li>
+
+        </ul>
+
+    </section>
+
+
+    <footer id="contato">
+        <div class="logo">
+            <img src="img/logo.png" width="100" alt="Logo">
+
+        </div>
+        <ul style="align-items: center; justify-content: center; align-items: center; justify-content: center;">
+         
+
+            <li><a href="https://www.linkedin.com/in/daniel-ribeiro-9567a21a2/"><img src="img/icone/1.png" width="30" alt="Descrição da Imagem"></a></li>
+            <li><a href="https://www.instagram.com/dr.webcreations/"><img src="img/icone/2.png" width="30" alt="Descrição da Imagem"></a></li>
+            <li><a href="https://www.behance.net/ddbx"><img src="img/icone/3.png" width="31" alt="Descrição da Imagem"></a></li>
+            <li><a href="https://github.com/DanielpRibeiro"><img src="img/icone/4.png" width="30" alt="Descrição da Imagem"></a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.querySelector('.modal');
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            var modal = document.querySelector('.modal');
+            modal.style.display = 'none';
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

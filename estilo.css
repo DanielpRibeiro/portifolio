@@ -1,0 +1,456 @@
+:root {
+    --cor-principal: #00AD52;
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    width: 1320px;
+    margin: 0 auto;
+    color: white;
+}
+
+header {
+
+    /* Os dois elementos na mesma linha do bloco */
+    display: flex;
+    /* Separando os elementos cada um para um lado */
+    justify-content: space-between;
+    /* Heigth ao centro do bloco */
+    align-items: center;
+    padding-top: 15px;
+}
+
+footer {
+
+    /* Os dois elementos na mesma linha do bloco */
+    display: flex;
+    /* Separando os elementos cada um para um lado */
+    justify-content: space-between;
+    /* Heigth ao centro do bloco */
+    align-items: center;
+    padding-top: 15px;
+}
+
+.logo {
+
+    flex-direction: column;
+    /* Diminuindo altura entre as linhas */
+    line-height: 10px;
+
+
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+header li a:hover{
+    color: var(--cor-principal);
+}
+
+a:hover {
+    color: white;
+    transition: 0.4s all;
+}
+
+#botao {
+    border: 1px solid var(--cor-principal);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/* diminuindo expessura da letra */
+h1 {
+    font-weight: 100;
+}
+
+/* ********************* capa*********************** */
+
+main {
+    display: flex;
+    height: 780px;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    height: 780px;
+    align-items: center;
+}
+
+.topico {
+    display: flex;
+    height: 200px;
+    align-items: center;
+}
+
+.esquerda {
+
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 70px;
+    line-height: 10px;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 10px;
+}
+
+#destaque {
+    color: var(--cor-principal);
+
+}
+
+.direita {
+    width: 50%;
+
+}
+
+.unica {
+    width: 100%;
+}
+
+p {
+    max-width: 500px;
+    font-size: 19px;
+    letter-spacing: 1px;
+
+}
+
+/* ******************* Foemulário ********************* */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input {
+    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 35px;
+    border: none;
+    font-size: 17px;
+}
+
+form [type="submit"] {
+    background-color: var(--cor-principal);
+    height: 55px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+
+}
+
+
+/*  */
+
+
+.topico {
+    text-align: center;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.projetos1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.linha1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid rgba(172, 172, 172, 0.379);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.card2 {
+    width: 210px;
+    border: 1px solid rgba(172, 172, 172, 0.379);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.card2 img {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card2:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px var(--cor-principal);
+    /*  */
+}
+
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+.final {
+    /* display: contents; */
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+
+}
+
+
+/*  */
+
+
+@media screen and (max-width: 768px) {
+    body {
+        /* padding-left: 20px; */
+        /* padding-right: 20px; */
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+
+    }
+
+    main {
+        /* display: flex; */
+        flex-direction: column;
+        /* padding-left: 40px;
+        padding-right: 40px; */
+        /* height: 100vh; */
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .capa {
+        width: 300px;
+    }
+
+    .esquerda {
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* display: flex; */
+
+        width: 100%;
+
+    }
+
+    .direita {
+        align-items: center;
+        justify-content: center;
+        /* display: flex; */
+        text-align: center;
+
+        width: 100%;
+    }
+
+    section {
+        /* display: flex; */
+        flex-direction: column;
+        /* padding-left: 40px;
+        padding-right: 40px; */
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .epop {
+        width: 300px;
+    }
+
+    p {
+        max-width: 100%;
+
+    }
+
+    .linha1 {
+        flex-direction: column;
+        /* justify-content: space-around; */
+        /* width: 100%; */
+        /* margin-bottom: 20px; */
+        width: 50%;
+        height: 100%;
+        align-content: space-around;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .projetos1 {
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-around; */
+        padding: 20px;
+        align-content: space-around;
+    }
+
+    .card {
+        /* align-content: space-around; */
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+
+
+    }
+
+    .projetos {
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-around; */
+        /* padding: 20px; */
+        align-content: space-around;
+        /* display: flex; */
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .linha {
+
+        flex-direction: column;
+
+
+        justify-content: space-around;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .aut {
+        width: 300px;
+    }
+
+    .mid {
+        line-height: 1.6;
+        /* Ajuste conforme necessário */
+
+    }
+
+    p {
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .ini{
+        padding-top: 40px;
+    }
+    .dan{
+        width: 250px;
+    }
+
+    header {
+        display: none;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 10px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    .card2 {
+        width: 60%;
+    }
+    .topico{
+        padding: 20px 0px;
+    }
+
+    .ajus{
+        margin-top: 110px;
+    }
+    li a img{
+        width: 15px;
+    }
+    .final ul{
+        padding: 0px;
+    }
+}
